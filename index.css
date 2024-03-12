@@ -1,0 +1,54 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.container{
+    padding: 3rem;
+}
+
+h1{
+    font-size: 3rem;
+    padding:2rem;
+    text-align: center;
+}
+
+.image{
+    display: block;
+    width:100%;
+}
+
+.overlay{
+    position: absolute;
+    top:0;
+    bottom:0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    opacity: 0;
+    background-color:rgb(255, 255,255,0.9)
+}
+
+.caption{
+    font-size:2rem ;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: -50%,-50%;
+    text-align: center;
+}
+
+.thumbnail:hover{
+    transform: translate(-4px);
+}
+.img-container:hover .overlay{
+    opacity: 1;
+}
+
+.sociallinks{
+    box-align: center;
+    display: flex;
+}
+body{
+    padding-top:50px ;
+}
